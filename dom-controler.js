@@ -18,3 +18,10 @@ var deleteElementById = function(id){
     var elementToDelete = selectElementById(id);
     elementToDelete.parentNode.removeChild(elementToDelete);
 }
+
+var setAttributeOfElementWithId = function(elementid,attribute,value){
+    if(typeof id !== 'string') throw "Invalid id!";
+    var element = selectElementById(id);
+    element.setAttribute(attribute,value);
+}
+
